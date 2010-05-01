@@ -1,0 +1,29 @@
+=============================================================================
+Project:   JsxGraphTest
+Copyright: ©2010 Concord Consortium
+Author: Stephen Bannasch
+
+This code is released under the GNU Lesser General Public License
+
+The JSXGraph code in the file: jsxgraph-onefile.js is copyright by
+Matthias Ehmann, Michael Gerhaeuser, Carsten Miller, Bianca Valentin, 
+Alfred Wassermann, and Peter Wilfahrt and also released under the 
+GNU Lesser General Public License.
+
+=============================================================================
+
+This is a sample sproutcore app testing the embedding of a JSXGraph component
+
+The file: jsxgraph-onefile.js combines all the JSXGraph javascript files into 
+one but it is not compressed to make tracing execution in Firebug practical.
+
+This JSXGraph code was pulled from the head of their subversion tree: 
+
+  https://jsxgraph.svn.sourceforge.net/svnroot/jsxgraph
+
+I created the file by adding this at line 86 of tools/makeDistrib.py in the JSXGraph codebase:
+
+  fout = open('jsxgraph-onefile.js','w')
+  fout.write(jstxt)
+  fout.close()
+
