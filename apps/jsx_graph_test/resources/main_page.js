@@ -42,6 +42,7 @@ JsxGraphTest.mainPage = SC.Page.design({
         {title: "Empty Graph", value: "jsxGraph1" },
         {title: "Curves", value: "jsxGraph2" },
         {title: "Bezier Curves", value: "jsxGraph3" },
+        {title: "SimpleGraph", value: "jsxGraph4" }
       ], 
       itemTitleKey: 'title', 
       itemValueKey: 'value', 
@@ -131,7 +132,10 @@ JsxGraphTest.mainPage = SC.Page.design({
                        {strokecolor:'blue', strokeOpacity:0.6, strokeWidth:5}); 
       }
     }
+  }),
+
+  jsxGraph4: JsxGraph.SimpleGraphView.design({
+    layout: {width:500, height:500, centerX:0, centerY:0}
   })
-  
 
 });
