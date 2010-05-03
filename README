@@ -27,3 +27,14 @@ I created the file by adding this at line 86 of tools/makeDistrib.py in the JSXG
   fout.write(jstxt)
   fout.close()
 
+Starting the JsxGraphTest application:
+
+You need SproutCore installed: http://www.sproutcore.com/get-started/
+
+Checkout the code and start the SproutCore development server:
+
+  git clone http://github.com/stepheneb/jsx_graph_test.git
+  cd jsx_graph_test
+  sc-server
+
+Open http://localhost:4020/jsx_graph_test in your browser.
